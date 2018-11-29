@@ -24,7 +24,7 @@ sagaMiddleware.run(rootSaga);
 const App = () => {
     return (
             <Provider store={store}>
-                <View>
+                <View style={styles.appContainer}>
                     <Header headerText="Tech Stack"/>
                     <LibraryList />
                 </View>
@@ -32,4 +32,9 @@ const App = () => {
         );
 };
 
+const styles = {
+    appContainer: {
+        flex: 1
+    }
+}
 export default App;
